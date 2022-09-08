@@ -262,6 +262,9 @@
 .company_information_two{
     padding: 0 40px;
 }
+.company_information_two img{
+    height: 740px;
+}
 .company_information{
     position: relative;
     display: grid;
@@ -318,14 +321,16 @@
 }
 .our_shops .img_two{
     bottom: 250px;
+    padding-left: 20px;
     position: relative;
 }
 .our_shops .img_one{
     bottom: 70px;
-    padding-right: 120px;
+    padding-right: 330px;
 }
 .our_shops .img_three{
     bottom: 450px;
+    padding-right: 110px;
 }
 /*reclaim*/
 .reclaim{
@@ -501,9 +506,9 @@
 /*    display: none;*/
 /*}*/
 @media only screen and (max-width: 3000px){
-    .presentation_part_two_css .img{
-        display: none;
-    }
+    /*.presentation_part_two_css .img{*/
+    /*    display: none;*/
+    /*}*/
     .presentation_part_one_css{
         padding-top: 200px;
     }
@@ -513,21 +518,23 @@
     .our_shops{
         padding-bottom: 400px;
     }
-    .our_shops .img_one{
+    .media_version{
         display: none;
     }
-    .our_shops .img_two{
-        display: none;
-    }
-    .our_shops .img_three{
-        display: none;
-    }
-    .wear_information img{
-        display: none;
-    }
+    /*.our_shops .img_one{*/
+    /*    display: none;*/
+    /*}*/
+    /*.our_shops .img_two{*/
+    /*    display: none;*/
+    /*}*/
+    /*.our_shops .img_three{*/
+    /*    display: none;*/
+    /*}*/
+    /*.wear_information img{*/
+    /*    display: none;*/
+    /*}*/
     .our_shops img{
-        height: 1017px;
-        margin-top: 300px;
+        height: 600px;
     }
     .company_information .presentation_one img{
         display: none;
