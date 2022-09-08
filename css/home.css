@@ -259,8 +259,14 @@
     display: none;
 }
 /*company_information*/
+.company_information_two{
+    padding: 0 40px;
+}
 .company_information{
     position: relative;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
     background-color: #DBD4C9;
 }
 .company_information p.main_information{
@@ -280,7 +286,6 @@
 }
 .company_information .company_information_part_text{
     width: 700px;
-    position: absolute;
     top: 600px;
     padding-left: 60px;
 }
@@ -532,7 +537,7 @@
     }
     .company_information .company_information_part_text{
         width: auto;
-        padding: 190px 700px;
+        /*padding: 190px 700px;*/
     }
     .company_place{
         padding-top: 20px;
