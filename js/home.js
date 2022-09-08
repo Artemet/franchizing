@@ -42,7 +42,7 @@ window.addEventListener('scroll', function (){
     }
     // presentation_twelve
     const get_presentation_twelve = document.querySelector(".presentation_twelve");
-    if (pageYOffset > 14500){
+    if (pageYOffset > 13500){
         get_presentation_twelve.classList.add("presentation_twelve_anim");
     }
 });
