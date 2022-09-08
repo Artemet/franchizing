@@ -18,25 +18,25 @@
     <div class="header_part">
         <div class="menu_container">
             <div class="main_p">
-                <p>кто мы ?</p>
+                <a href="#we">кто мы ?</a>
             </div>
             <div>
-                <p>ценности</p>
+                <a href="">ценности</a>
             </div>
             <div>
-                <p>продукт</p>
+                <a href="">продукт</a>
             </div>
             <div class="img img_logo">
                 <a href=""><img src="res/6457829c-1d52-476c-8e7e-ea05dbea8a45.png" alt=""></a>
             </div>
             <div>
-                <p>аудитория</p>
+                <a href="#peaple">аудитория</a>
             </div>
             <div>
-                <p>магазины</p>
+                <a href="#shops">магазины</a>
             </div>
             <div>
-                <p>контакты</p>
+                <a href="#contact">контакты</a>
             </div>
         </div>
     </div>
@@ -53,7 +53,7 @@
         комплекс услуг, формы постоянной организационной и информационной поддержки.</p>
     <?=$line?>
 </div>
-<div class="img_row">
+<div class="img_row" id="shops">
     <div class="img special_img special_img_one">
         <img src="res/shop1.png" alt="">
     </div>
@@ -67,7 +67,7 @@
         <img src="res/shop4.png" alt="">
     </div>
 </div>
-<div class="presentation_part presentation_part_one_css">
+<div class="presentation_part presentation_part_one_css" id="we">
     <div class="img">
         <img src="res/presentation1.png" alt="" class="presentation_one">
     </div>
@@ -223,7 +223,7 @@
     <p>Покупают одежду и обувь европейского качества по доступным ценам</p>
     <?=$line?>
 </div>
-<div class="presentation_part presentation_part_one_css">
+<div class="presentation_part presentation_part_one_css" id="peaple">
     <div class="img img_special_css">
         <img src="res/presentation8.png" alt="" class="presentation_eight">
     </div>
@@ -231,7 +231,7 @@
         <img src="res/presentation7.png" alt="">
     </div>
 </div>
-<div class="text_information">
+<div class="text_information" id="shops">
     <?=$line = "<div class='line'></div>"?>
     <p>Дизайн торгового оборудования выполнен в духе последних
         европейских тенденций. </p>
@@ -387,7 +387,7 @@
     <a href="res/presentation.pdf" download="document"><button>Скачать заявление о создании фирменного салона!</button></a>
     <?=$line?>
 </div>
-<div class="contacts">
+<div class="contacts" id="contact">
     <div class="wrapper">
         <h2 class="contact">контакты</h2>
         <div class="information">
@@ -422,14 +422,14 @@
 <div class="footer">
     <div class="wrapper">
         <div class="footer_part">
-            <p>кто мы ?</p>
+            <a href="#we">кто мы ?</a>
             <div class="yellow_line"></div>
-            <p>ценности</p>
+            <a href="">ценности</a>
         </div>
         <div class="footer_part">
-            <p>продукт</p>
+            <a href="">продукт</a>
             <div class="yellow_line"></div>
-            <p>аудитория</p>
+            <a href="#peaple">аудитория</a>
         </div>
         <div class="footer_part">
             <div class="img">
@@ -437,21 +437,21 @@
             </div>
         </div>
         <div class="footer_part">
-            <p>продукт</p>
+            <a href="">продукт</a>
             <div class="yellow_line"></div>
-            <p>магазины</p>
+            <a href="#shops">магазины</a>
             <div class="special_text">
                 <p>концепт</p>
                 <p>реконцент</p>
             </div>
         </div>
         <div class="footer_part">
-            <p>контакты</p>
+            <a href="#contact">контакты</a>
             <div class="yellow_line"></div>
             <div class="special_text">
                 <div>
-                    <a href="tel: +79850177717">+7 (985) 017-77-17</a>
-                    <a href="tel: +79850177717">+7 (985) 017-77-17</a>
+                    <a href="tel: +79850177717" class="phone">+7 (985) 017-77-17</a>
+                    <a href="tel: +79850177717" class="phone">+7 (985) 017-77-17</a>
                 </div>
             </div>
         </div>
