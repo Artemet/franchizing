@@ -261,12 +261,14 @@
         </div>
     </div>
 </div>
-<div class="company_information">
+<div class="company_information company_information_two">
     <div class="company_information_part company_information_part_presentation">
-        <div class="img presentation_one" style="background-color: #DBD4C9;">
-            <img src="res/presentation11.png" alt="" class="one">
+        <div class="img">
             <img src="res/presentation11_two.png" alt="" class="two">
         </div>
+<!--        <div class="img presentation_one" style="background-color: #DBD4C9;">-->
+<!--            <img src="res/presentation11.png" alt="" class="one">-->
+<!--        </div>-->
     </div>
     <div class="company_information_part company_information_part_text company_information_part_text_two">
         <p class="main_information">На данный момент компания FRANCESCO DONNI находится в
