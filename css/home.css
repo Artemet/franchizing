@@ -60,6 +60,7 @@
 }
 /*reclam_img*/
 .reclam_img img{
+    height: 86vh;
     width: 100%;
 }
 /*text_information*/
@@ -454,27 +455,31 @@
 .footer .footer_part{
     padding: 0 30px;
 }
-.footer .footer_part p{
+.footer .footer_part a{
     font-weight: 700;
     font-size: 25px;
+    color: black;
+    text-decoration: none;
     text-transform: uppercase;
 }
 .footer .yellow_line{
     background-color: #B75A5A;
     height: 4px;
+    margin: 5px 0;
     width: 144px;
 }
 .footer .special_text p{
-    font-size: 15px;
+    font-size: 18px;
     margin: 0;
 }
-.footer .special_text a{
+.footer .special_text a.phone{
     color: black;
+    font-size: 18px;
     font-weight: 700;
     text-decoration: none;
 }
 .footer .special_text div{
-    margin-top: 25px;
+    margin-top: 10px;
     display: grid;
 }
 .footer .bottom_line{
