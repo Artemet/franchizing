@@ -22,22 +22,22 @@ window.addEventListener('scroll', function (){
     }
     // presentation_four
     const get_presentation_four = document.querySelector(".presentation_four");
-    if (pageYOffset > 5000){
+    if (pageYOffset > 2500){
         get_presentation_four.classList.add("presentation_four_anim");
     }
     // presentation_six
     const get_presentation_six = document.querySelector(".presentation_six");
-    if (pageYOffset > 6200){
+    if (pageYOffset > 3800){
         get_presentation_six.classList.add("presentation_six_anim");
     }
     // presentation_eight
     const get_presentation_eight = document.querySelector(".presentation_eight");
-    if (pageYOffset > 8150){
+    if (pageYOffset > 5150){
         get_presentation_eight.classList.add("presentation_eight_anim");
     }
     // presentation_nine
     const get_presentation_nine = document.querySelector(".presentation_nine");
-    if (pageYOffset > 9850){
+    if (pageYOffset > 6850){
         get_presentation_nine.classList.add("presentation_nine_anim");
     }
     // presentation_twelve
