@@ -1,0 +1,865 @@
+/*top_part*/
+.top_part{
+    padding: 8px 0;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+.top_part p{
+    font-size: 12px;
+    margin: 0;
+}
+.top_part a{
+    color: white;
+    text-decoration: none;
+}
+/*header*/
+.header{
+    background-color: #DCD5CA;
+}
+.header .header_part{
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+.header .header_part .menu_container{
+    display: flex;
+    justify-content: center;
+    color: #32383f;
+    align-items: center;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.header .header_part .menu_container .main_p{
+    color: #B75A5A;
+}
+.header .header_part .menu_container p{
+    transition: 0.4s;
+}
+.header .header_part .menu_container p:hover{
+    color: #B75A5A;
+}
+.header .header_part .menu_container div{
+    padding-right: 20px;
+}
+.header .header_part .img_line{
+    display: flex;
+    align-items: center;
+    padding-right: 80px;
+}
+.header .header_part .img_line img{
+    height: 30px;
+    padding-right: 15px;
+}
+.header .img_logo{
+    text-align: center;
+}
+.header .img_logo img{
+    padding: 20px 30px;
+    height: 90px;
+}
+/*reclam_img*/
+.reclam_img img{
+    width: 100%;
+}
+/*text_information*/
+.text_information{
+    padding: 29px 0;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.text_information h2{
+    font-weight: 100;
+    margin-bottom: 40px;
+}
+.text_information button{
+    margin-top: 20px;
+    background-color: #DBD4C9;
+    height: 66px;
+    color: white;
+    font-size: 20px;
+    transition: 0.5s;
+    border: none;
+    width: 414px;
+    margin-bottom: 40px;
+    animation-direction: alternate-reverse;
+    animation-name: text_information_button;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.text_information button:hover{
+    opacity: 50%;
+}
+@keyframes text_information_button {
+    0% {
+        width: 414px;
+        font-size: 20px;
+    }
+    100% {
+        width: 434px;
+        font-size: 24px;
+    }
+}
+.text_information p{
+    line-height: 20px;
+    padding: 0 500px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.text_information_two p{
+    padding: 0 200px
+}
+.company_information .presentation_one{
+    display: none;
+}
+/*img_row*/
+.img_row{
+    background-color: #DBD4C9;
+    justify-content: center;
+    display: flex;
+}
+.img_row .img{
+    bottom: 30px;
+    position: relative;
+}
+.img_row .special_img{
+    bottom: 70px;
+    transition: 2s;
+    z-index: 1;
+}
+.img_row .special_img_one{
+    left: 50px;
+}
+.img_row .special_img_two{
+    left: -50px;
+}
+.img_row .special_img_one_anim{
+    left: 0;
+    bottom: 30px;
+}
+.img_row .special_img_two_anim{
+    left: 0;
+    bottom: 30px;
+}
+.img_row img{
+    padding: 0 17px;
+    height: 381px;
+}
+/*presentation_parts*/
+.presentation_one{
+    opacity: 0;
+    transition: 1s;
+}
+.presentation_one_anim{
+    opacity: 100%;
+}
+.presentation_two{
+    opacity: 0;
+    transform: rotate(90deg);
+    transition: 2.5s;
+}
+.presentation_two_anim{
+    transform: rotate(0deg);
+    opacity: 100%;
+}
+.presentation_four{
+    opacity: 0;
+    transition: 2s;
+}
+.presentation_four_anim{
+    opacity: 100%;
+}
+.presentation_six{
+    transition: 2s;
+    opacity: 0;
+    border-radius: 50%;
+}
+.presentation_six_anim{
+    border-radius: 0;
+    opacity: 100;
+}
+.presentation_eight{
+    opacity: 0;
+    transition: 2.5s;
+}
+.presentation_eight_anim{
+    opacity: 100%;
+}
+.presentation_nine{
+    opacity: 0;
+    right: 100vw;
+    transition: 2.5s;
+}
+.presentation_nine_anim{
+    right: 0;
+    opacity: 100%;
+}
+.presentation_twelve{
+    transition: 4s;
+    opacity: 0;
+}
+.presentation_twelve_anim{
+    opacity: 100%;
+}
+.presentation_part_one_css{
+    width: 100%;
+    margin-bottom: 60px;
+    background-color: #DBD4C9;
+}
+.presentation_part_one_css .img_special_css img{
+    position: relative;
+    top: -65px;
+}
+.presentation_part_one_css .img{
+    text-align: center;
+}
+.presentation_part_one_css img{
+    position: relative;
+    top: 50px;
+    height: 750px;
+}
+.presentation_part_two_css{
+    width: 100%;
+    padding-bottom: 60px;
+    background-color: #DBD4C9;
+}
+.presentation_part_two_css .img{
+    text-align: center;
+}
+.presentation_part_two_css img{
+    height: 750px;
+}
+.presentation_part_two_css .img_part_two img{
+    width: 100%;
+    height: 1000px;
+}
+/*company_place*/
+.company_place{
+    padding: 0 60px;
+    background-color: #DBD4C9;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.company_place .company_place_part .country_img img{
+    height: 52px;
+}
+.company_place .company_place_part img.main_img{
+    height: 800px;
+}
+.company_place .company_place_part div{
+    text-align: center;
+}
+.company_place .company_place_part h2{
+    font-weight: 100;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+}
+.company_place .information .line{
+    display: none;
+}
+/*company_information*/
+.company_information{
+    position: relative;
+    background-color: #DBD4C9;
+}
+.company_information p.main_information{
+    font-size: 17px;
+    line-height: 25px;
+}
+.company_information .presentation_one{
+    height: 1100px;
+}
+.company_information .presentation_one img{
+    width: 100%;
+}
+.company_information .presentation_one img.two{
+    display: none;
+    height: 600px;
+    width: 600px;
+}
+.company_information .company_information_part_text{
+    width: 700px;
+    position: absolute;
+    top: 600px;
+    padding-left: 60px;
+}
+.company_information .company_information_part_text_two{
+    right: 0;
+    top: 440px;
+    padding-left: 0;
+}
+.company_information .company_information_part{
+    text-align: center;
+}
+.company_information .company_information_part .main_road p{
+    font-size: 14px;
+}
+/*img_list*/
+.img_list .presentation_part_one_css{
+    margin-bottom: 0;
+}
+/*our_shops*/
+.our_shops{
+    height: 1150px;
+    background-color: #DBD4C9;
+}
+.our_shops img{
+    height: 517px;
+}
+.our_shops .special_img{
+    position: relative;
+    text-align: end;
+}
+.our_shops .img_two{
+    bottom: 250px;
+    position: relative;
+}
+.our_shops .img_one{
+    bottom: 70px;
+    padding-right: 120px;
+}
+.our_shops .img_three{
+    bottom: 450px;
+}
+/*reclaim*/
+.reclaim{
+    text-align: center;
+    background-color: #DBD4C9;
+    /*padding-bottom: 140px;*/
+}
+/*.reclaim .wrapper{*/
+/*    padding: 0 350px;*/
+/*}*/
+.reclaim h2{
+    font-weight: 100;
+    letter-spacing: 5px;
+    font-size: 30px;
+    margin-top: 0;
+    color: white;
+}
+.reclaim .reclaim_part{
+    background-color: white;
+    padding: 10px 0;
+    width: 700px;
+    margin: 20px auto;
+}
+.reclaim .reclaim_part div{
+    padding-bottom: 10px;
+ }
+.reclaim .information{
+    padding-bottom: 50px;
+}
+.reclaim .our_pluses{
+    padding-top: 90px;
+    height: 200px;
+    top: 40px;
+    position: relative;
+    background-color: #DBD4C9;
+    margin-bottom: 50px;
+}
+/*contacts*/
+.contacts{
+    background-color: #DCD5CA;
+    padding-top: 20px;
+    padding-bottom: 150px;
+    text-align: center;
+}
+.contacts .wrapper{
+    position: relative;
+    bottom: 90px;
+    width: 100%;
+    background-color: #DCD5CA;
+    margin: auto;
+}
+.contacts .inputs{
+    display: grid;
+}
+.contacts h2.contact{
+    font-size: 48px;
+    letter-spacing: 10px;
+    color: white;
+    margin: 0;
+    padding: 40px 0;
+    font-weight: 100;
+}
+.contacts .form{
+    padding: 15px 80px;
+    margin: auto;
+    width: fit-content;
+    background-color: white;
+}
+.contacts .form h2{
+    letter-spacing: 5px;
+    font-weight: 100;
+}
+.contacts label{
+    padding: 10px 0;
+}
+.contacts .inputs{
+    padding-top: 20px;
+}
+.contacts label input#message{
+    height: 500px;
+    width: 100%;
+}
+.contacts .form .message_label{
+    position: relative;
+}
+.contacts .form .message_label span.count_number{
+    position: absolute;
+    right: 10px;
+    color: #DCD5CA;
+    bottom: 20px;
+}
+.contacts .form input{
+    padding-left: 10px;
+    outline: none;
+    height: 35px;
+    font-size: 12px;
+    color: black;
+    width: 100%;
+    border: 3px solid lightgray;
+}
+.contacts .form button{
+    margin-top: 20px;
+    background-color: #DCD0B8;
+    font-size: 20px;
+    height: 29px;
+    width: 158px;
+    transition: 0.5s;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+}
+.contacts .form button:hover{
+    opacity: 50%;
+}
+.contacts .information{
+    padding-bottom: 39px;
+}
+.contacts .information p{
+    font-size: 14px;
+    margin: 8px 0;
+    text-transform: uppercase;
+}
+/*footer*/
+.footer .wrapper{
+    display: flex;
+    padding: 90px 0;
+    justify-content: center;
+}
+.footer img{
+    height: 116px;
+}
+.footer .footer_part{
+    padding: 0 30px;
+}
+.footer .footer_part p{
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.footer .yellow_line{
+    background-color: #B75A5A;
+    height: 4px;
+    width: 144px;
+}
+.footer .special_text p{
+    font-size: 15px;
+    margin: 0;
+}
+.footer .special_text a{
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+.footer .special_text div{
+    margin-top: 25px;
+    display: grid;
+}
+.footer .bottom_line{
+    color: white;
+    padding: 13px 0;
+    background-color: black;
+}
+.footer .bottom_line p{
+    margin: 0;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+/*.company_information .presentation_one img.two{*/
+/*    display: none;*/
+/*}*/
+@media only screen and (max-width: 3000px){
+    .presentation_part_two_css .img{
+        display: none;
+    }
+    .presentation_part_one_css{
+        padding-top: 200px;
+    }
+    .our_shops .media_version{
+        text-align: center;
+    }
+    .our_shops{
+        padding-bottom: 400px;
+    }
+    .our_shops .img_one{
+        display: none;
+    }
+    .our_shops .img_two{
+        display: none;
+    }
+    .our_shops .img_three{
+        display: none;
+    }
+    .wear_information img{
+        display: none;
+    }
+    .our_shops img{
+        height: 1017px;
+        margin-top: 300px;
+    }
+    .company_information .presentation_one img{
+        display: none;
+    }
+    .presentation_part_two_css .img_part_two img{
+        height: 1500px;
+    }
+    .company_information .company_information_part_text{
+        width: auto;
+        padding: 190px 700px;
+    }
+    .company_place{
+        padding-top: 20px;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-bottom: 170px;
+    }
+    .company_information .presentation_one{
+        height: 900px;
+    }
+    .company_information .presentation_one img.two{
+        display: block;
+        margin: auto;
+        height: 450px;
+    }
+}
+@media only screen and (max-width: 1900px){
+    .company_information .company_information_part_text{
+        padding: 120px;
+        top: -220px;
+    }
+}
+@media only screen and (max-width: 1535px){
+    .text_information p{
+        padding: 0 200px;
+    }
+    .presentation_part_two_css .img{
+        padding-top: 600px;
+    }
+    .company_information p.main_information{
+        /*font-size: 10px;*/
+        padding: 0 420px;
+        text-align: left;
+    }
+    .company_information .company_information_part{
+        padding-left: 0;
+    }
+    .our_shops{
+        padding-bottom: 500px;
+        margin: auto;
+    }
+    .company_information{
+        padding: 0 10px;
+    }
+    .our_shops .img{
+        width: fit-content;
+        position: unset;
+    }
+    .our_shops .img_one{
+        margin-left: 22px;
+    }
+    .wear_information img{
+        display: block;
+    }
+    .presentation_part_two_css .img_part_two img{
+        height: 800px;
+    }
+}
+@media only screen and (max-width: 1379px){
+    .company_information p.main_information{
+        /*font-size: 10px;*/
+        width: 60%;
+        padding-left: 30px;
+        text-align: left;
+    }
+    .company_information .company_information_part{
+        padding-top: 0;
+        top: 600px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        padding-bottom: 200px;
+    }
+    .presentation_part_two_css .img{
+        padding-top: 100px;
+    }
+    .our_shops{
+        padding-bottom: 100px;
+    }
+    .our_shops img{
+        margin-top: 100px;
+    }
+    .company_information .presentation_one img.one{
+        display: none;
+    }
+    .company_information .presentation_one img.two{
+        display: block;
+    }
+    .company_information .company_information_part_presentation img.two{
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 1142px){
+    .img_row{
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .reclaim .wrapper {
+        padding: 0;
+    }
+    .reclaim .our_pluses{
+        padding: 0 240px;
+    }
+}
+@media only screen and (max-width: 1069px){
+    .company_place .company_place_part{
+        padding-top: 40px;
+    }
+    .our_shops img{
+        height: 1017px;
+    }
+    .presentation_part_two_css .img{
+        padding-top: 0;
+    }
+    .img_row{
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .presentation_part_one_css img{
+        height: 450px;
+    }
+    .presentation_part_two_css img {
+        height: 450px;
+    }
+    .footer .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .presentation_part_one_css{
+        padding-top: 100px;
+    }
+    .presentation_part_two_css .img_part_two img {
+        height: 700px;
+    }
+    .company_place{
+        grid-template-columns: 1fr;
+    }
+    .company_place .line_img img{
+        display: none;
+    }
+    .company_place .information{
+        background-color: white;
+        padding: 20px 0;
+        margin-bottom: 40px;
+    }
+    .company_place .information p{
+        width: 600px;
+        margin: auto;
+        padding: 20px 0;
+    }
+    .company_place .information .line{
+        display: block;
+    }
+    .company_place .company_place_part .country_information{
+        margin: auto;
+    }
+    .footer .bottom_line p{
+        font-size: 8px;
+    }
+    .top_part p{
+        font-size: 9px;
+    }
+}
+@media only screen and (max-width: 800px){
+    .header .header_part .menu_container{
+        padding: 10px 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr auto;
+    }
+    .header .header_part .menu_container div{
+        padding-right: 0;
+    }
+    .header .header_part .menu_container p{
+        margin: 0;
+    }
+    .text_information p{
+        padding: 0 100px;
+    }
+    .main_road{
+        text-align: left;
+        padding-left: 90px;
+    }
+    .company_information .company_information_part{
+        padding-right: 0;
+    }
+    .company_information p.main_information{
+        padding-left: 90px;
+    }
+    .company_information p.main_information{
+        width: auto;
+        padding-right: 10px;
+    }
+    .reclaim .reclaim_part{
+        width: 400px;
+    }
+    .reclaim .our_pluses{
+        padding: 0 20px;
+    }
+    .contacts .form{
+        padding: 15px 40px;
+    }
+    .footer img{
+        display: none;
+    }
+    .footer .wrapper{
+        grid-template-columns: 1fr 1fr auto;
+    }
+    .presentation_part_two_css img{
+        height: 250px;
+    }
+    .company_information .company_information_part_presentation img.two{
+        width: 350px;
+    }
+    .img_list .shops{
+        display: none;
+    }
+    .presentation_part_one_css img{
+        height: 250px;
+    }
+    .company_place .company_place_part img.main_img{
+        height: 350px;
+    }
+    .company_place .information{
+        background-color: #DBD4C9;
+    }
+    .company_place .information p{
+        width: auto;
+    }
+    .company_place .company_place_part p{
+        font-size: 10px;
+        width: 220px;
+        margin: auto;
+        padding-bottom: 20px;
+    }
+    .img_row{
+        grid-template-columns: 1fr;
+    }
+    .img_row .img{
+        padding-top: 20px;
+        position: revert;
+    }
+    .presentation_part_two_css .img_part_two img{
+        object-fit: contain;
+    }
+}
+@media only screen and (max-width: 483px){
+    .text_information p{
+        font-size: 10px;
+    }
+    .reclaim .information{
+        font-size: 12px;
+    }
+    .reclaim .reclaim_part{
+        font-size: 10px;
+    }
+    .our_shops{
+        height: fit-content;
+    }
+    .presentation_part_two_css img{
+        padding-bottom: 20px;
+    }
+    .company_place{
+        padding-top: 0;
+    }
+    .presentation_part_two_css{
+        padding-bottom: 0;
+    }
+    .reclaim h2{
+        font-size: 20px;
+    }
+    .footer .footer_part{
+        padding: 0 10px;
+    }
+    .footer .footer_part p{
+        font-size: 15px;
+    }
+    .company_information .company_information_part_special{
+        padding-bottom: 0;
+    }
+    .text_information{
+        padding-top: 100px;
+    }
+    .text_information button{
+        width: 300px;
+    }
+    .reclaim .reclaim_part{
+        width: 200px;
+    }
+    .presentation_part_one_css img.shops{
+        z-index: -1;
+        top: 150px;
+    }
+    .company_information p.main_information{
+        padding-left: 20px;
+        font-size: x-small;
+    }
+    .main_road{
+        padding-left: 20px;
+    }
+    .company_information .company_information_part{
+        padding-bottom: 10px;
+    }
+    .contacts .form h2{
+        font-size: 20px;
+    }
+    .header .img_logo img{
+        display: none;
+    }
+    .header .header_part .menu_container{
+        padding: 10px;
+    }
+    .header .header_part .menu_container p{
+        padding-bottom: 10px;
+    }
+    .text_information p{
+        padding: 0 20px;
+    }
+    .contacts .form input{
+        width: 50%;
+    }
+    textarea{
+        width: 50%;
+    }
+    .contacts .form{
+        padding: 15px 5px;
+    }
+    .our_shops img{
+        height: 617px;
+    }
+    .contacts{
+        padding-bottom: 20px;
+    }
+}

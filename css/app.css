@@ -1,0 +1,27 @@
+@import "fonts.css";
+body{
+    font-family: "Lato Medium";
+    margin: 0;
+}
+.line{
+    height: 1px;
+    width: 185px;
+    margin: auto;
+    background-color: #838383;
+}
+.line_img img{
+    padding: 20px 0;
+}
+textarea{
+    padding-top: 10px;
+    font-family: "Arial";
+    width: 100%;
+    border: 3px solid lightgray;
+    font-size: 12px;
+    padding-left: 10px;
+    resize: none;
+    outline: none;
+}
+img{
+    object-fit: cover;
+}
