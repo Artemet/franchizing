@@ -30,13 +30,15 @@
     font-size: 12px;
     text-transform: uppercase;
 }
-.header .header_part .menu_container .main_p{
+.header .header_part .menu_container .main_a{
     color: #B75A5A;
 }
-.header .header_part .menu_container p{
+.header .header_part .menu_container a{
     transition: 0.4s;
+    color: black;
+    text-decoration: none;
 }
-.header .header_part .menu_container p:hover{
+.header .header_part .menu_container a:hover{
     color: #B75A5A;
 }
 .header .header_part .menu_container div{
@@ -56,7 +58,7 @@
 }
 .header .img_logo img{
     padding: 20px 30px;
-    height: 90px;
+    height: 75px;
 }
 /*reclam_img*/
 .reclam_img img{
@@ -65,7 +67,7 @@
 }
 /*text_information*/
 .text_information{
-    padding: 29px 0;
+    padding: 80px 0;
     text-align: center;
     margin-bottom: 100px;
 }
@@ -75,7 +77,6 @@
 }
 .text_information button{
     margin-top: 20px;
-    background-color: #DBD4C9;
     height: 66px;
     color: white;
     font-size: 20px;
@@ -93,12 +94,10 @@
 }
 @keyframes text_information_button {
     0% {
-        width: 414px;
-        font-size: 20px;
+        background-color: #B75A5A;
     }
     100% {
-        width: 434px;
-        font-size: 24px;
+        background-color: #DBD4C9;
     }
 }
 .text_information p{
@@ -149,19 +148,21 @@
 /*presentation_parts*/
 .presentation_one{
     opacity: 0;
-    transition: 1s;
+    border-radius: 50%;
+    transition: 3s;
 }
 .presentation_one_anim{
+    border-radius: 0;
     opacity: 100%;
 }
 .presentation_two{
     opacity: 0;
-    transform: rotate(90deg);
-    transition: 2.5s;
+    border-radius: 50%;
+    transition: 3s;
 }
 .presentation_two_anim{
-    transform: rotate(0deg);
     opacity: 100%;
+    border-radius: 0;
 }
 .presentation_four{
     opacity: 0;
@@ -181,10 +182,12 @@
 }
 .presentation_eight{
     opacity: 0;
+    border-radius: 50%;
     transition: 2.5s;
 }
 .presentation_eight_anim{
     opacity: 100%;
+    border-radius: 0;
 }
 .presentation_nine{
     opacity: 0;
@@ -221,7 +224,7 @@
 }
 .presentation_part_two_css{
     width: 100%;
-    padding-bottom: 60px;
+    padding-bottom: 180px;
     background-color: #DBD4C9;
 }
 .presentation_part_two_css .img{
@@ -231,7 +234,6 @@
     height: 750px;
 }
 .presentation_part_two_css .img_part_two img{
-    width: 100%;
     height: 1000px;
 }
 /*company_place*/
@@ -259,7 +261,28 @@
     display: none;
 }
 /*company_information*/
+.company_information_one{
+    height: 1500px;
+    grid-template-columns: 1fr;
+}
+.company_information_one img{
+    height: 1200px;
+}
+.company_information_one .company_information_part_text{
+    position: relative;
+    top: -550px;
+    padding-left: 200px;
+}
+.company_information_one .main_road{
+    text-align: center;
+}
+.company_information_one p.main_information{
+    margin-bottom: 0;
+}
 .company_information_two{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
     padding: 0 40px;
 }
 .company_information_two img{
@@ -267,9 +290,6 @@
 }
 .company_information{
     position: relative;
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
     background-color: #DBD4C9;
 }
 .company_information p.main_information{
@@ -289,8 +309,6 @@
 }
 .company_information .company_information_part_text{
     width: 700px;
-    top: 600px;
-    padding-left: 60px;
 }
 .company_information .company_information_part_text_two{
     right: 0;
@@ -361,12 +379,13 @@
     padding-bottom: 50px;
 }
 .reclaim .our_pluses{
-    padding-top: 90px;
+    padding-top: 50px;
+    width: fit-content;
+    margin: auto;
     height: 200px;
     top: 40px;
     position: relative;
     background-color: #DBD4C9;
-    margin-bottom: 50px;
 }
 /*contacts*/
 .contacts{
@@ -387,10 +406,14 @@
 }
 .contacts h2.contact{
     font-size: 48px;
+    background-color: #DCD5CA;
     letter-spacing: 10px;
+    margin: auto;
+    position: relative;
+    width: fit-content;
+    bottom: 50px;
     color: white;
-    margin: 0;
-    padding: 40px 0;
+    padding: 15px 36%;
     font-weight: 100;
 }
 .contacts .form{
@@ -502,6 +525,15 @@
     text-transform: uppercase;
     padding-left: 20px;
 }
+.company_information_one h2{
+    padding-top: 50px;
+    display: none;
+    margin-top: 0;
+    text-align: center;
+}
+.company_information_one .line{
+    display: none;
+}
 /*.company_information .presentation_one img.two{*/
 /*    display: none;*/
 /*}*/
@@ -509,9 +541,9 @@
     /*.presentation_part_two_css .img{*/
     /*    display: none;*/
     /*}*/
-    .presentation_part_one_css{
-        padding-top: 200px;
-    }
+    /*.presentation_part_one_css{*/
+    /*    padding-top: 200px;*/
+    /*}*/
     .our_shops .media_version{
         text-align: center;
     }
@@ -540,10 +572,10 @@
         display: none;
     }
     .presentation_part_two_css .img_part_two img{
-        height: 1500px;
+        height: 700px;
     }
     .company_information .company_information_part_text{
-        width: auto;
+        /*width: auto;*/
         /*padding: 190px 700px;*/
     }
     .company_place{
@@ -564,20 +596,41 @@
 @media only screen and (max-width: 1900px){
     .company_information .company_information_part_text{
         padding: 120px;
-        top: -220px;
+    }
+    .our_shops img{
+        height: 500px;
+    }
+}
+@media only screen and (max-width: 1638px){
+    .our_shops img{
+        height: 450px;
+    }
+    .company_information .company_information_part_text{
+        padding: 50px;
+        top: -450px;
+    }
+    .company_information_one img{
+        height: 800px;
     }
 }
 @media only screen and (max-width: 1535px){
     .text_information p{
         padding: 0 200px;
     }
-    .presentation_part_two_css .img{
-        padding-top: 600px;
+    .our_shops .img{
+        padding-right: 0;
+        margin: auto;
     }
+    /*.presentation_part_two_css .img{*/
+    /*    padding-top: 600px;*/
+    /*}*/
     .company_information p.main_information{
         /*font-size: 10px;*/
-        padding: 0 420px;
         text-align: left;
+    }
+    .our_shops .img_two{
+        padding-left: 0;
+        padding-right: 40px;
     }
     .company_information .company_information_part{
         padding-left: 0;
@@ -593,9 +646,6 @@
         width: fit-content;
         position: unset;
     }
-    .our_shops .img_one{
-        margin-left: 22px;
-    }
     .wear_information img{
         display: block;
     }
@@ -604,22 +654,31 @@
     }
 }
 @media only screen and (max-width: 1379px){
+    .company_information_one .company_information_part_presentation{
+        display: none;
+    }
+    .company_information_one h2{
+        display: block;
+    }
     .company_information p.main_information{
+        margin-top: 0;
         /*font-size: 10px;*/
-        width: 60%;
-        padding-left: 30px;
+        padding-left: 10px;
         text-align: left;
+    }
+    .reclam_img img{
+        height: auto;
     }
     .company_information .company_information_part{
         padding-top: 0;
-        top: 600px;
+        position: initial;
         left: 0;
         right: 0;
         margin: auto;
-        padding-bottom: 200px;
+        padding-bottom: 50px;
     }
     .presentation_part_two_css .img{
-        padding-top: 100px;
+        padding-top: 500px;
     }
     .our_shops{
         padding-bottom: 100px;
@@ -635,6 +694,15 @@
     }
     .company_information .company_information_part_presentation img.two{
         margin: auto;
+    }
+    .company_information_one{
+        height: auto;
+        background-color: white;
+    }
+    .company_information_one .line{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: block;
     }
 }
 @media only screen and (max-width: 1142px){
@@ -653,9 +721,6 @@
 @media only screen and (max-width: 1069px){
     .company_place .company_place_part{
         padding-top: 40px;
-    }
-    .our_shops img{
-        height: 1017px;
     }
     .presentation_part_two_css .img{
         padding-top: 0;
@@ -679,7 +744,7 @@
         padding-top: 100px;
     }
     .presentation_part_two_css .img_part_two img {
-        height: 700px;
+        height: 500px;
     }
     .company_place{
         grid-template-columns: 1fr;
@@ -711,10 +776,23 @@
     }
 }
 @media only screen and (max-width: 800px){
+    .company_information_one h2{
+        text-align: left;
+        padding-left: 20px;
+    }
+    .company_information p.main_information {
+        width: 500px;
+    }
     .header .header_part .menu_container{
         padding: 10px 30px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr auto;
+    }
+    /*.presentation_part_two_css .img_part_two img{*/
+    /*    height: 400px;*/
+    /*}*/
+    .reclam_img img {
+        height: 500px;
     }
     .header .header_part .menu_container div{
         padding-right: 0;
@@ -725,19 +803,12 @@
     .text_information p{
         padding: 0 100px;
     }
-    .main_road{
+    .company_information_one  .main_road{
         text-align: left;
-        padding-left: 90px;
+        padding-left: 10px;
     }
     .company_information .company_information_part{
         padding-right: 0;
-    }
-    .company_information p.main_information{
-        padding-left: 90px;
-    }
-    .company_information p.main_information{
-        width: auto;
-        padding-right: 10px;
     }
     .reclaim .reclaim_part{
         width: 400px;
@@ -791,8 +862,23 @@
     .presentation_part_two_css .img_part_two img{
         object-fit: contain;
     }
+    .presentation_part_two_css .img_part_two img{
+        height: 350px;
+    }
+    .presentation_part_one_css img{
+        top: 0;
+    }
 }
 @media only screen and (max-width: 483px){
+    .presentation_part_one_css{
+        padding-top: 0;
+    }
+    .header .img_logo img{
+        height: 50px;
+    }
+    .header .header_part .menu_container div{
+        padding-right: 5px;
+    }
     .text_information p{
         font-size: 10px;
     }
@@ -827,17 +913,13 @@
         padding-bottom: 0;
     }
     .text_information{
-        padding-top: 100px;
+        padding: 0;
     }
     .text_information button{
         width: 300px;
     }
     .reclaim .reclaim_part{
         width: 200px;
-    }
-    .presentation_part_one_css img.shops{
-        z-index: -1;
-        top: 150px;
     }
     .company_information p.main_information{
         padding-left: 20px;
@@ -852,9 +934,9 @@
     .contacts .form h2{
         font-size: 20px;
     }
-    .header .img_logo img{
-        display: none;
-    }
+    /*.header .img_logo img{*/
+    /*    display: none;*/
+    /*}*/
     .header .header_part .menu_container{
         padding: 10px;
     }
