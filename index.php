@@ -18,7 +18,7 @@
     <div class="header_part">
         <div class="menu_container">
             <div class="main_p">
-                <a href="#we">кто мы ?</a>
+                <a href="#we" class="main_a">кто мы ?</a>
             </div>
             <div>
                 <a href="">ценности</a>
@@ -167,10 +167,12 @@
         </div>
     </div>
 </div>
-<div class="company_information">
+<div class="company_information company_information_one">
+    <?=$line?>
+    <h2>Коолекция одежды</h2>
     <div class="company_information_part company_information_part_presentation">
+        <div class="img"><img src="res/presentation5.png" alt="" class="one"></div>
         <div class="img presentation_one wear_information">
-            <img src="res/presentation5.png" alt="" class="one">
             <img src="res/presentation5_two.png" alt="" class="two">
         </div>
     </div>
@@ -201,6 +203,7 @@
             образ по-настоящему уникален и неповторим
         </p>
     </div>
+    <?=$line?>
 </div>
 <div class="presentation_part presentation_part_one_css">
     <div class="img">
