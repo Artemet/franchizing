@@ -109,7 +109,7 @@
         <img src="res/presentation2.png" alt="" class="presentation_two">
     </div>
     <div class="img img_part_two">
-        <img src="res/presentation3.png" alt="">
+        <img src="res/presentation3.jpg" alt="">
     </div>
 </div>
 <div class="company_place">
