@@ -42,15 +42,15 @@
     </div>
 </div>
 <div class="reclam_img">
-    <div class="img">
-        <img src="res/reclam.png" alt="">
-    </div>
+    <h2>МЫ ПРЕДЛАГАЕМ ВАМ СТАТЬ ЧАСТЬЮ FRANCESCO DONNI</h2>
 </div>
-<div class="text_information">
-    <?=$line = "<div class='line'></div>"?>
-    <p>Сеть магазинов «FRANCESCO DONNI» предлагает
-        каждому своему партнеру по франчайзингу целостную бизнес-систему, включающую технологию создания фирменного салона,
-        комплекс услуг, формы постоянной организационной и информационной поддержки.</p>
+<div class="text_information text_information_one">
+    <div class="line_one">
+        <?=$line = "<div class='line'></div>"?>
+    </div>
+    <p>Сеть магазинов «FRANCESCO DONNI» предлагает <br>
+        каждому своему партнеру по франчайзингу целостную бизнес-систему, <br> включающую технологию создания фирменного салона,<br>
+        комплекс услуг, формы постоянной организационной и информационной <br> поддержки.</p>
     <?=$line?>
 </div>
 <div class="img_row" id="shops">
@@ -152,7 +152,7 @@
         <div class="img line_img">
             <img src="res/line2.png" alt="">
         </div>
-        <div class="information">
+        <div class="information  text_information_three">
             <?=$line?>
             <p>Благодаря многолетнему опыту, дизайнеры FRANCESCO
                 DONNI позаботились о том, чтобы Коллекции всегда отражали как
@@ -210,7 +210,7 @@
         <img src="res/presentation6.png" alt="" class="shops presentation_six">
     </div>
 </div>
-<div class="text_information special_text_information">
+<div class="text_information special_text_information text_information_four">
     <?=$line = "<div class='line'></div>"?>
     <p>ЖЕНЩИНЫ  И  МУЖЧИНЫ  27 - 45 ЛЕТ</p>
     <p>Cовершают покупки несколько раз в сезон и комплексно</p>
@@ -234,7 +234,7 @@
         <img src="res/presentation7.png" alt="">
     </div>
 </div>
-<div class="text_information" id="shops">
+<div class="text_information  text_information_five" id="shops">
     <?=$line = "<div class='line'></div>"?>
     <p>Дизайн торгового оборудования выполнен в духе последних
         европейских тенденций. </p>
@@ -274,6 +274,7 @@
 <!--        </div>-->
     </div>
     <div class="company_information_part company_information_part_text company_information_part_text_two">
+        <?=$line?>
         <p class="main_information">На данный момент компания FRANCESCO DONNI находится в
             процессе подготовки к реализации RE-концепции.</p>
         <p class="main_information">Новое оборудование удобно и элегантно, для него характерны
@@ -290,6 +291,7 @@
             становятся настоящими звездами пространства.
         </p>
         <p class="main_information">Таково представление идеального магазина FRANCESCO DONNI.</p>
+        <?=$line?>
     </div>
 </div>
 <div class="our_shops">
@@ -339,7 +341,7 @@
         </div>
     </div>
 </div>
-<div class="text_information">
+<div class="text_information text_information_six">
     <?=$line = "<div class='line'></div>"?>
     <h2>Франчайзинг</h2>
     <p>
@@ -396,7 +398,7 @@
     <div class="wrapper">
         <h2 class="contact">контакты</h2>
         <div class="information">
-            <p>телефон для связи: +79857432105</p>
+            <p>телефон для связи: <a href="tel:+79857432105">+79857432105</a></p>
             <p>Почта: sjahah@gmail.com</p>
         </div>
         <form action="form/message.php" method="post" class="form">
