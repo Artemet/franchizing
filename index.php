@@ -12,11 +12,14 @@
 </head>
 <body>
 <div class="top_part">
-    <p>пн-ПТ с 10:00-18:00 тел: <a href="">+7 (985) 017-77-17</a> / <a href="">+7 (985) 017-77-17</a></p>
+    <p>пн-ПТ с 10:00-18:00 тел: <a href="tel: 89629334306"> 89629334306</a></p>
 </div>
 <div class="header">
     <div class="header_part">
         <div class="menu_container">
+            <div class="mobile">
+                <img src="res/bars.svg" alt="" onclick="mobile_header_menu()">
+            </div>
             <div class="main_p">
                 <a href="#we" class="main_a">кто мы ?</a>
             </div>
@@ -40,18 +43,40 @@
             </div>
         </div>
     </div>
+    <div class="mobile_sub_menu">
+        <div class="main_p">
+            <a href="#we" class="main_a">кто мы ?</a>
+        </div>
+        <div>
+            <a href="">ценности</a>
+        </div>
+        <div>
+            <a href="">продукт</a>
+        </div>
+        <div>
+            <a href="#peaple">аудитория</a>
+        </div>
+        <div>
+            <a href="#shops">магазины</a>
+        </div>
+        <div>
+            <a href="#contact">контакты</a>
+        </div>
+    </div>
 </div>
 <div class="reclam_img">
     <h2>МЫ ПРЕДЛАГАЕМ ВАМ СТАТЬ ЧАСТЬЮ FRANCESCO DONNI</h2>
 </div>
 <div class="text_information text_information_one">
     <div class="line_one">
-        <?=$line = "<div class='line'></div>"?>
+        <div class='line line_offset'></div>
     </div>
     <p>Сеть магазинов «FRANCESCO DONNI» предлагает <br>
         каждому своему партнеру по франчайзингу целостную бизнес-систему, <br> включающую технологию создания фирменного салона,<br>
         комплекс услуг, формы постоянной организационной и информационной <br> поддержки.</p>
-    <?=$line?>
+    <div class="line_one">
+        <div class='line line_offset'></div>
+    </div>
 </div>
 <div class="img_row" id="shops">
     <div class="img special_img special_img_one">
@@ -69,11 +94,13 @@
 </div>
 <div class="presentation_part presentation_part_one_css" id="we">
     <div class="img">
-        <img src="res/presentation1.png" alt="" class="presentation_one">
+        <img src="res/presentation1.jpg" alt="" class="presentation_one">
     </div>
 </div>
 <div class="text_information text_information_two">
-    <?=$line = "<div class='line'></div>"?>
+    <div class="line_one">
+        <div class='line line_offset'></div>
+    </div>
     <p>FRANCESCO DONNI - известный бренд женской, мужской
         обуви и аксессуаров, который уже более 20 лет производит модную
         продукцию высокого качества. Весной 2019 года компания FRANCESCO
@@ -102,7 +129,9 @@
         FRANCESCO DONNI могут быть уверены, что приобретают не только
         красивую, но и надежную обувь.
     </p>
-    <?=$line?>
+    <div class="line_one">
+        <div class='line line_offset'></div>
+    </div>
 </div>
 <div class="presentation_part presentation_part_two_css">
     <div class="img">
@@ -153,7 +182,11 @@
             <img src="res/line2.png" alt="">
         </div>
         <div class="information  text_information_three">
-            <?=$line?>
+            <div class="line_one">
+                <div class="line_one">
+                    <div class='line line_offset'></div>
+                </div>
+            </div>
             <p>Благодаря многолетнему опыту, дизайнеры FRANCESCO
                 DONNI позаботились о том, чтобы Коллекции всегда отражали как
                 базовые варианты на каждый день, так и последние трендовые
@@ -163,12 +196,18 @@
             <p>Помимо собственных Коллекций, в ассортименте компании
                 представлены специально отобранные и востребованные на
                 российском рынке, широко известные европейские бренды: RIEKER | CAPRICE | KEDDO</p>
-            <?=$line?>
+            <div class="line_one">
+                <div class='line line_offset'></div>
+            </div>
         </div>
     </div>
 </div>
 <div class="company_information company_information_one">
-    <?=$line?>
+    <div class="line_one">
+        <div class="line_one">
+            <div class='line line_offset'></div>
+        </div>
+    </div>
     <h2>Коолекция одежды</h2>
     <div class="company_information_part company_information_part_presentation">
         <div class="img"><img src="res/presentation5.png" alt="" class="one"></div>
@@ -203,7 +242,9 @@
             образ по-настоящему уникален и неповторим
         </p>
     </div>
-    <?=$line?>
+    <div class="line_one">
+        <div class='line line_offset'></div>
+    </div>
 </div>
 <div class="presentation_part presentation_part_one_css">
     <div class="img">
@@ -211,7 +252,11 @@
     </div>
 </div>
 <div class="text_information special_text_information text_information_four">
-    <?=$line = "<div class='line'></div>"?>
+    <div class="line_one">
+        <div class="line_one">
+            <div class='line line_offset'></div>
+        </div>
+    </div>
     <p>ЖЕНЩИНЫ  И  МУЖЧИНЫ  27 - 45 ЛЕТ</p>
     <p>Cовершают покупки несколько раз в сезон и комплексно</p>
     <p>Свободное время проводят в магазинах и ТРЦ,
@@ -224,18 +269,22 @@
     <p>Ценят узнаваемость приобретаемой марки обуви</p>
     <p>Ищут обувь на разные случаи жизни — fashion/casual/classic</p>
     <p>Покупают одежду и обувь европейского качества по доступным ценам</p>
-    <?=$line?>
+    <div class="line_one">
+        <div class='line line_offset'></div>
+    </div>
 </div>
 <div class="presentation_part presentation_part_one_css" id="peaple">
     <div class="img img_special_css">
-        <img src="res/presentation8.png" alt="" class="presentation_eight">
+        <img src="res/presentation8.jpg" alt="" class="presentation_eight">
     </div>
     <div class="img">
         <img src="res/presentation7.png" alt="">
     </div>
 </div>
 <div class="text_information  text_information_five" id="shops">
-    <?=$line = "<div class='line'></div>"?>
+    <div class="line_one">
+        <div class='line line_offset'></div>
+    </div>
     <p>Дизайн торгового оборудования выполнен в духе последних
         европейских тенденций. </p>
     <p>Открытая витринная группа позволяет
@@ -250,7 +299,9 @@
         красный. За счет белого цвета в интерьере много воздуха и
         пространства. Красный, как магнит, акцентирует внимание на логотипе,
         а также используется для модульных рам в торговом зале.</p>
-    <?=$line?>
+    <div class="line_one">
+        <div class='line line_offset'></div>
+    </div>
 </div>
 <div class="img_list">
     <div class="presentation_part presentation_part_one_css">
@@ -269,12 +320,14 @@
         <div class="img">
             <img src="res/presentation11_two.png" alt="" class="two">
         </div>
-<!--        <div class="img presentation_one" style="background-color: #DBD4C9;">-->
-<!--            <img src="res/presentation11.png" alt="" class="one">-->
-<!--        </div>-->
+        <!--        <div class="img presentation_one" style="background-color: #DBD4C9;">-->
+        <!--            <img src="res/presentation11.png" alt="" class="one">-->
+        <!--        </div>-->
     </div>
     <div class="company_information_part company_information_part_text company_information_part_text_two">
-        <?=$line?>
+        <div class="line_one">
+            <div class='line line_offset'></div>
+        </div>
         <p class="main_information">На данный момент компания FRANCESCO DONNI находится в
             процессе подготовки к реализации RE-концепции.</p>
         <p class="main_information">Новое оборудование удобно и элегантно, для него характерны
@@ -291,7 +344,9 @@
             становятся настоящими звездами пространства.
         </p>
         <p class="main_information">Таково представление идеального магазина FRANCESCO DONNI.</p>
-        <?=$line?>
+        <div class="line_one">
+            <div class='line line_offset'></div>
+        </div>
     </div>
 </div>
 <div class="our_shops">
@@ -309,7 +364,7 @@
     </div>
 </div>
 <div class="presentation_part presentation_part_two_css">
-    <div class="img">
+    <div class="img twelve">
         <img src="res/presentation12.png" alt="" class="presentation_twelve">
     </div>
 </div>
@@ -342,7 +397,9 @@
     </div>
 </div>
 <div class="text_information text_information_six">
-    <?=$line = "<div class='line'></div>"?>
+    <div class="line_one">
+        <div class='line line_offset'></div>
+    </div>
     <h2>Франчайзинг</h2>
     <p>
         Устойчивые позиции компании на рынке
@@ -392,7 +449,9 @@
         пожалуйста, заявку и отправьте на почту ......
     </p>
     <a href="res/presentation.pdf" download="document"><button>Скачать заявление о создании фирменного салона!</button></a>
-    <?=$line?>
+    <div class="line_one">
+        <div class='line line_offset'></div>
+    </div>
 </div>
 <div class="contacts" id="contact">
     <div class="wrapper">
@@ -402,8 +461,10 @@
             <p>Почта: sjahah@gmail.com</p>
         </div>
         <form action="form/message.php" method="post" class="form">
-            <h2>форма обратной связи</h2>
-            <?=$line?>
+            <h2>форма обратной <br> связи</h2>
+            <div class="line_one">
+                <div class='line'></div>
+            </div>
             <div class="inputs">
                 <label for="name">
                     <input type="text" id="name" placeholder="ИМЯ:" name="name">
@@ -418,7 +479,7 @@
                     <input type="text" id="email" placeholder="ВАША ПОЧТА:" name="email">
                 </label>
                 <label for="message" class="message_label">
-                    <textarea name="message" maxlength="500" id="message" placeholder="MESSAGE" cols="30" rows="10"></textarea>
+                    <textarea name="message" maxlength="500" id="message" placeholder="СООБЩЕНИЕ" cols="30" rows="10"></textarea>
                     <span class="count_number"><span class="siro">0</span>/500</span>
                 </label>
             </div>
@@ -457,8 +518,7 @@
             <div class="yellow_line"></div>
             <div class="special_text">
                 <div>
-                    <a href="tel: +79850177717" class="phone">+7 (985) 017-77-17</a>
-                    <a href="tel: +79850177717" class="phone">+7 (985) 017-77-17</a>
+                    <a href="tel: 89629334306" class="phone">89629334306</a>
                 </div>
             </div>
         </div>
